@@ -20,19 +20,21 @@ namespace ArrayExercises
             //HOW DO I DO IT WITH A FOREACH LOOP?!?
             foreach (int number in numbers)
             {
-                
-                Console.WriteLine(number);
-
-            }
-
-
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                if (numbers[i] % 2 != 0)
+                if(number % 2 != 0)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(number);
                 }
+                
             }
+
+
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    if (numbers[i] % 2 != 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
             //this is printing 0 1 3 4 WTF?!?!
 
 
