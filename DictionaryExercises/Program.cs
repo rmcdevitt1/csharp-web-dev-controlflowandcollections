@@ -9,7 +9,6 @@ namespace DictionaryExercises
         {
 
             Console.WriteLine("Hello Dictionary!");
-
             //(keys:IDs, values:names)
             Dictionary<int, string> students = new Dictionary<int, string>();
             int newStudentID;
@@ -17,8 +16,7 @@ namespace DictionaryExercises
 
             Console.WriteLine("Enter your students ID number (or ENTER to finish):");
 
-
-            //"COPIED" CONTENT:
+            ///////MY CONTENT:///////
             do
             {
                 Console.WriteLine("Student ID Number: ");
@@ -37,16 +35,18 @@ namespace DictionaryExercises
             } while (!Equals(newStudentID, ""));
 
             Console.WriteLine("\nClass Roster:");
-            string sum = "";
+            //string sum = "";
 
             foreach (KeyValuePair<int, string> student in students)
             {
                 Console.WriteLine(student.Key + " (" + student.Value + ")");
-                sum += student.Value;
+                //sum += student.Value;
             }
 
             string avg = sum / students.Count;
             Console.WriteLine("Average grade: " + avg);
+
+            ///////MY CONTENT:///////
 
         }
     }
