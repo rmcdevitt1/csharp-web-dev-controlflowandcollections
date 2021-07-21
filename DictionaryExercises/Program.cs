@@ -10,8 +10,8 @@ namespace DictionaryExercises
 
             Console.WriteLine("Hello Dictionary!");
             //(keys:IDs, values:names)
-            Dictionary<int, string> students = new Dictionary<int, string>();
-            int newStudentID;
+            Dictionary<string, string> students = new Dictionary<string, string>();
+            string newStudentID;
             string newName;
 
             Console.WriteLine("Enter your students ID number (or ENTER to finish):");
@@ -21,7 +21,7 @@ namespace DictionaryExercises
             {
                 Console.WriteLine("Student ID Number: ");
                 string input = Console.ReadLine();
-                newStudentID = int.Parse(input);
+                newStudentID = input;
 
                 if (!Equals(newStudentID, ""))
                 {
@@ -37,14 +37,14 @@ namespace DictionaryExercises
             Console.WriteLine("\nClass Roster:");
             //string sum = "";
 
-            foreach (KeyValuePair<int, string> student in students)
+            foreach (KeyValuePair<string, string> student in students)
             {
                 Console.WriteLine(student.Key + " (" + student.Value + ")");
                 //sum += student.Value;
             }
 
-            string avg = sum / students.Count;
-            Console.WriteLine("Average grade: " + avg);
+            //string avg = sum / students.Count;
+            //Console.WriteLine("Average grade: " + avg);
 
             ///////MY CONTENT:///////
 
